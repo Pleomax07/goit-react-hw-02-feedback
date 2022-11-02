@@ -35,7 +35,7 @@ class App extends Component {
     const total = this.countTotalFeedback();
     return (
       <>
-        <Section title="Please leave feedback">
+        <Section>
           <h2>Please leave feedback</h2>
           <FeedbackOptions
             options={keys}
@@ -43,7 +43,7 @@ class App extends Component {
           />
         </Section>
 
-        <Section title="Statistics">
+        <Section>
           <h2>Statistics</h2>
           {total > 0 ? (
             <Statistics
